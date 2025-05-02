@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Amazon Price & Tariff Guesser</title>
+  <style>
+    html, body {
+      width: 400px;  /* Set a fixed width for the popup */
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      padding: 15px;
+    }
+    h1 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    h2 {
+      font-size: 16px;
+      margin: 10px 0 5px;
+      color: #555;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #444;
+      margin-bottom: 10px;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 10px;
+      max-width: 120px;
+    }
+    .footer {
+      font-size: 12px;
+      color: #888;
+      text-align: center;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Your logo file should be in your extension folder -->
+    <img src="logo.png" alt="Extension Logo" class="logo">
+
+    <h1>Amazon Price & Tariff Guesser</h1>
+    <p>
+      This extension helps you compare prices on Amazon.com with their Canadian counterparts.
+      By converting Canadian prices into US dollars using live exchange rates, it gives you an estimate
+      of tariff and other charges that you might pay in the US but not in Canada. In essence, it lets
+      you “guess” the hidden tariff costs and see if cross-border shopping might be more affordable.
+    </p>
+    
+    <h2>How It Works:</h2>
+    <p>
+      1. When you view your cart on Amazon.com, the extension scrapes product details and locates the matching 
+      product pages on Amazon.ca.
+    </p>
+    <p>
+      2. It then extracts the Canadian price from the Amazon.ca page using multiple layout checks and retrieves 
+      the latest exchange rate.
+    </p>
+    <p>
+      3. Using that rate, the extension converts the Canadian price into US dollars. The displayed US value helps you 
+      estimate the hidden tariff charges and extra costs.
+    </p>
+    
+    <p>Use this tool to make smarter decisions on cross-border purchases by understanding and anticipating extra costs.</p>
+    
+    <div class="footer">
+      &copy; 2025 Amazon Price & Tariff Guesser
+    </div>
+  </div>
+</body>
+</html>
